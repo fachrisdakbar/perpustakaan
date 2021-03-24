@@ -24,11 +24,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/bukus', [App\Http\Controllers\BukuController::class, 'index'])->name('bukus');
 
 Route::resource('/bukus', BukuController::class);
-// Route::namespace('Admin')->prefix('admin')->as('admin.')->middleware('auth','admin')->group(function(){
-
-// 	Route::get('/admin', 'HomeController@index')->name('home');
-// 	// Route::get('/search', 'EmployeesController@search')->name('search');
-// 	Route::resource('/perpus', 'PerpusController');
-// 	Route::resource('/admin', 'AdminController');
-// 	// Route::resource('/user', 'UserController');
-// 	});
